@@ -21,5 +21,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path for application
-    path('queueforRestaurant/', include('queueforRestaurant.urls')),
+    path('', include('queueforRestaurant.urls')),
 ]

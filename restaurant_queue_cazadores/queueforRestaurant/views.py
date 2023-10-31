@@ -1,5 +1,9 @@
 from django.shortcuts import render, redirect
 from .models import Reservation
+from django.http import HttpResponse
+
+def index(request):
+    return render(request, 'queueforRestaurant/index.html')
 
 def add_to_queue(request):
     if request.method == 'POST':
@@ -12,11 +16,8 @@ def add_to_queue(request):
         reservation.save()
 
         return redirect('') # develop a page that gives a confirmation
-    return render(request, 'queueforRestaurant/add.html') #add.html is a template needs to be developed
+    return render(request, 'queueforRestaurant/add.html') 
 
-
-def home(request):
-    return render(request, 'home.html')
 
 # Create your views here.
 
