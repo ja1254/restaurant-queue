@@ -10,4 +10,9 @@ class Reservation(models.Model):
     phoneNumber = models.CharField(max_length=15)
     email = models.EmailField()
     time = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Reservation for {self.name} at {self.time}"
+    
+    
  

@@ -20,13 +20,31 @@ h1
     transform: translateY(-50%, -50%);
 }
 
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: yellowgreen; /* Change this to your preferred color */
+    color: blue;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.button-link:hover {
+    background-color: #45a049; /* Change this to your preferred hover color */
+}
+
+
 /*this moves the h1*/
 .h1
 {
     margin: 0;
     position: absolute;
     top: 10%;
-    left: 38%;
+    left: 50%;
     -ms-transform: translateY(-50%, -50%);
     transform: translateY(-50%, -50%);
 }

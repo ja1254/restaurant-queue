@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -124,3 +124,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+TWILIO_ACCOUNT_SID = os.getenv('AC99d6836ccec48699b2221cd80189b597')
+TWILIO_AUTH_TOKEN = os.getenv('9ae25d8e55b739ad0f0fa6c5ca300869')
+TWILIO_PHONE_NUMBER = os.getenv('+18556999598')

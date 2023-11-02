@@ -9,16 +9,16 @@
 </head>
 <body>
     <div class="h1">
-        <h1>Welcome to Cazadores</h1>
+        <h1>Welcome to Restaurant</h1>
     </div>
     <form method="post">
         {% csrf_token %}
         
         <div class="center">
-            <button type="button" id="Btn" onclick="joinWaitList()">Join Wait List</button>
+            <a href="{% url 'queueforRestaurant:add_to_queue' %}" class="button-link">Join Wait List</a>
         </div>
         
     </form>
-    <script src="{% static 'index.js' %}"></script>
+
 </body>
 </html>
