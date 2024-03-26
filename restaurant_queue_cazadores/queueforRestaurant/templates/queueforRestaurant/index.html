@@ -13,9 +13,11 @@
     </div>
     <form method="post">
         {% csrf_token %}
-        
         <div class="center">
             <a href="{% url 'queueforRestaurant:add_to_queue' %}" class="button-link">Join Wait List</a>
+        </div>
+        <div class="upright">
+            <a href="{% url 'ownerLogIn:login' %}" class="button-link">owner Log In</a>
         </div>
         
     </form>

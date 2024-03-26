@@ -1,11 +1,12 @@
 body 
 {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 h1 
 {
-    color: black;
+    color: rgb(0, 0, 0);
+    
 
 }
 
@@ -23,8 +24,8 @@ h1
 .button-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: yellowgreen; /* Change this to your preferred color */
-    color: blue;
+    background-color: rgb(116, 146, 39); /* Change this to your preferred color */
+    color: rgb(0, 0, 0);
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
@@ -34,7 +35,7 @@ h1
 }
 
 .button-link:hover {
-    background-color: #45a049; /* Change this to your preferred hover color */
+    background-color: #441392; /* Change this to your preferred hover color */
 }
 
 
@@ -44,9 +45,15 @@ h1
     margin: 0;
     position: absolute;
     top: 10%;
-    left: 50%;
+    left: 40%;
     -ms-transform: translateY(-50%, -50%);
     transform: translateY(-50%, -50%);
 }
 
 
+.upright
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}

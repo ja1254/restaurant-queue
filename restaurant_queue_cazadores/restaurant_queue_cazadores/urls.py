@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #path for application
     path('', include('queueforRestaurant.urls')),
+    path('ownerLogIn/', include("ownerLogIn.urls")),
 ]

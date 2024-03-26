@@ -14,5 +14,7 @@ class Reservation(models.Model):
     def __str__(self):
         return f"Reservation for {self.name} at {self.time}"
     
+
+    
     
  
